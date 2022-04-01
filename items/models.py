@@ -1,6 +1,5 @@
 from pyexpat import model
 from statistics import mode
-from django.conf import settings
 from django.db import models
 from django.conf import settings
 
@@ -98,6 +97,7 @@ class Item(models.Model):
     multiplier = models.IntegerField(default=1)
     poster = models.ImageField(
         upload_to=poster_directory_path, null=True, blank=True)
+    video = models.CharField(max_length=200, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 

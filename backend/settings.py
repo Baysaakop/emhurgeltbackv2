@@ -18,7 +18,7 @@ if os.path.isfile(dotenv_file):
 SECRET_KEY = 'c^-*o(i9ky+-^+=3ll1%%xang(f#c(!%$ummqykw)8v#&iws!)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'emhurgeltback.herokuapp.com', 'emhurgelt.herokuapp.com']
 
